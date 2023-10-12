@@ -14,7 +14,7 @@ local grupoUI = display.newGroup()
 
 -- modifica quantidade de pontos e vidas.
 local pontos = 0
-local vidas = 2
+local vidas = 5
 
 -- Background
 local bg2 = display.newImageRect(grupoBg, "imagens/bg2.png", 1500, 1200 * 1.6)
@@ -23,7 +23,7 @@ bg2.y = 130
 
 -- música
 local music = audio.loadStream("musica/topgear.mp3")
-audio.pause(music, { loops = -1 })
+audio.play(music, { loops = -1 })
 audio.setVolume(0.1)
 
 -- Paredes invisíveis no jogo

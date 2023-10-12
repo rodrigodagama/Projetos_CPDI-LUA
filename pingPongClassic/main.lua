@@ -1,11 +1,7 @@
 local physics = require ("physics")
--- Iniciar a física no projeto:
 physics.start ()
--- Definir a gravidade do projeto: Definimos a gravidade x e y do projeto.
 physics.setGravity (0, 0)
--- Definir a renderização de visualização da física (usado somente durante o desenvolvimento para testes)
--- Modos: normal: aparece apenas as imagens, corpos físicos invisíveis (padrão do sistema), hybrid: Mostra as imagens e os corpos físicos, debug: mostra apenas os corpos físicos.
-physics.setDrawMode ("hybrid")
+physics.setDrawMode ("normal")
 
 local mesa = display.newImageRect( "imagens/mesa.png", 768, 1024 )
 mesa.x = 245

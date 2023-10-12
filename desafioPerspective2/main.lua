@@ -6,7 +6,7 @@ local scriptTeclado = require("Teclado")
 -- Iniciar a física e configurar a gravidade
 physics.start()
 physics.setGravity(0, 9.8)
-physics.setDrawMode("hybrid")
+physics.setDrawMode("normal")
 
 -- Criar os grupos para organizar o conteúdo do jogo
 local backGroup = display.newGroup() -- Para o background
